@@ -1,11 +1,10 @@
-/* eslint-disable react/jsx-closing-tag-location */
-/* eslint-disable react/jsx-fragments */
 import React from 'react'
 import { GlobalStyle } from './styles/GlobalStyles'
 import { Logo } from './components/Logo'
 import { Home } from './pages/Home'
 import { Router } from '@reach/router'
 import { Detail } from './pages/detail'
+import { NavBar } from './components/NavBar'
 export const App = () => {
   return (
     <div>
@@ -16,6 +15,7 @@ export const App = () => {
         <Home path='/pet/:categoryId' />
         <Detail path='/detail/:detailId' />
       </Router>
+      <NavBar />
     </div>
 
   )

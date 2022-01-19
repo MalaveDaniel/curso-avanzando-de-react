@@ -12,8 +12,6 @@ export const PhotoCard = ({ id, likes = 0, src = DEFAULT_IMAGE }) => {
   const [show, element] = useNearScreen()
   const key = `like-${id}`
   const [liked, setLiked] = useLocalStorage(key, false)
-
-
   return (
     <Article ref={element}>
       {
